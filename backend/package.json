@@ -1,14 +1,15 @@
 {
-  "name": "backend",
+  "name": "rave-finder-api",
   "version": "1.0.0",
-  "description": "This folder is a self-contained Express.js server that can be deployed to **Render**, **Railway**, or **Fly.io** so the Expo mobile app can reach it from a real device or Expo Go on any network.",
-  "main": "scraper.js",
+  "description": "API for underground shows",
+  "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@neondatabase/serverless": "^0.9.3"
+  }
 }
